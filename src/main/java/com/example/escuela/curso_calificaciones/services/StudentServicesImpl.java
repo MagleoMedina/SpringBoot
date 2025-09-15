@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.escuela.curso_calificaciones.models.Student;
 
-@Service
+@Service("studentList")
 public class StudentServicesImpl implements StudentService {
 
     List<Student> students = new ArrayList<>();

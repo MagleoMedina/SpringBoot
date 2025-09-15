@@ -3,7 +3,7 @@ package com.example.escuela.curso_calificaciones.controllers;
 import java.net.URI;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,6 +27,7 @@ import com.example.escuela.curso_calificaciones.services.StudentService;
 public class StudentController {
 
     @Autowired
+    @Qualifier("studentList")
     private StudentService students; 
     
 
